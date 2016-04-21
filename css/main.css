@@ -1,0 +1,57 @@
+body, html{ margin:0; padding:0}
+  #slider *[class*="pull-"] { display: inline-block; margin:0; height: 100%; cursor: pointer}
+  #slider .pull-left{ float:left}
+  #slider .pull-right{ float:right}
+  #slider .table { display:table; height: 100% }
+  #slider .table > * { display: table-cell; vertical-align: middle}
+  #slider .controls { position: absolute; left:0; top:0; width:100%; height:100%; display:block}
+
+  #slider{ 
+    overflow:hidden; 
+    position:relative; 
+    display:block; 
+    width:100vw; 
+    margin:0; 
+    padding:0;
+  }
+
+  #slider ul { 
+    position: absolute; 
+    left:0; 
+    top:0; 
+    /*width:300vw;*/
+    display:block; 
+    margin:0; 
+    padding:0; 
+    transition: left .5s; 
+  }
+  
+  #slider,
+  #slider ul li 
+  { 
+  height : 50vh;
+  }
+  
+
+  #slider ul li { 
+    width:100vw; 
+    display:inline-block; 
+    float:left; 
+    text-align:center; 
+    background-size:cover; 
+    background-position:center center; 
+  }
+  
+  #slider #prev, #slider #next{ 
+    position:relative 
+  }
+  
+  #slider #prev span, #slider #next span{ 
+    z-index: 10; 
+    position:relative
+  }
+  
+  #slider #prev:after, #slider #next:after { 
+    
+  }
+  .controls {color: white;}
