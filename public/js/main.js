@@ -1,40 +1,46 @@
 var newSlider = function(){
-	
-  var container = "?";
   var left = 0;
-  
+
  	return {
 
-    slides : "?",
+    slides : "3",
 
     init : function(){
       var app = this;
-      var slider = $('slider');
-      
+      var slider = $('#slider');
+
       container = slider.find('ul');
-      
+
       var controlLeft  = $('#prev');
       var controlRight = $('#next');
 
       controlLeft.bind('click',function(){
-        app.prev();
+        app.prevSlide();
+      });
+
+			controlRight.bind('click',function(){
+        app.nextSlide();
       });
     },
 
     move : function(){
-      container.css( "?" )
+      container.css( "left",left )
     },
 
-    prev : function(){
+    prevSlide : function(){
       //incrementar left
-      //left =
-      this.move()
+			left = -100;
+      this.move(
+				console.log(left)
+			)
     },
 
-    next : function(){
+    nextSlide : function(){
       //decrementar left
-      //left =
-      this.move()
+      left = 100;
+      this.move(
+				console.log(left)
+			)
     }
 
   }
