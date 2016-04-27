@@ -1,0 +1,30 @@
+{
+  "name": "slider-training",
+  "version": "1.0.0",
+  "description": "slider training with css and javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yanioconjota/slider-training.git"
+  },
+  "keywords": [
+    "css",
+    "javascript"
+  ],
+  "author": "Janio Isacura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yanioconjota/slider-training/issues"
+  },
+  "homepage": "https://github.com/Yanioconjota/slider-training",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "font-awesome": "^4.6.1",
+    "jquery": "^1.12.3"
+  }
+}
