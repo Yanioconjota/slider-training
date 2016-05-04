@@ -8,9 +8,12 @@ app.use("/public/css", express.static(__dirname + "/public/css"));
 app.use("/public/js", express.static(__dirname + "/public/js"));
 app.use("/node_modules", express.static(__dirname + "/node_modules"));
 
-app.get('/', function (req, res) {
-  //res.send('Hello World!');
+app.get('/slider', function (req, res) {
   res.render('../slider.html');
+});
+
+app.get('/home', function (req, res) {
+  res.render('../home.html');
 });
 
 app.listen(3001, function () {
